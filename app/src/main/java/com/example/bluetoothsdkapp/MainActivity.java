@@ -471,6 +471,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         WorkView.setText("当前工作状态为：\n" + "宴会厅会议模式\n" +
                 "灯具亮度：50%\n" + "灯具色温：2700K\n" + "动态追踪模式");
         msg_buffer[0]=0x0d;
+        msg_buffer[1]=0x00;
         Write(msg_buffer);
     }
 
