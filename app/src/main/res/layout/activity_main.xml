@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <SeekBar
+        android:id="@+id/Yaw"
+        android:layout_width="202dp"
+        android:layout_height="21dp"
+
+
+        android:background="#EFF1F3"
+        android:max="360"
+        android:progress="0"
+        android:secondaryProgress="15"
+        app:layout_constraintBottom_toBottomOf="@+id/Yaw_view"
+        app:layout_constraintStart_toEndOf="@+id/Yaw_view" />
+
+    <TextView
+        android:id="@+id/Yaw_view"
+        android:layout_width="129dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="#FFFFFF"
+        android:text="@string/yaw"
+        app:layout_constraintBottom_toTopOf="@+id/light_view"
+        app:layout_constraintStart_toStartOf="@+id/light_view" />
+
+    <Button
+        android:id="@+id/ADD_BLUETOOTH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/Add_bluetooth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Scene_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sence1"
+        app:layout_constraintBottom_toBottomOf="@+id/Scene_2"
+        app:layout_constraintEnd_toStartOf="@+id/WorkView"
+        app:layout_constraintTop_toTopOf="@+id/Scene_2" />
+
+    <Button
+        android:id="@+id/Scene_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/Sence4"
+        app:layout_constraintEnd_toEndOf="@+id/Scene_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Scene_2"
+        app:layout_constraintTop_toBottomOf="@+id/Scene_2" />
+
+    <Button
+        android:id="@+id/Scene_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Scene2"
+        app:layout_constraintStart_toEndOf="@+id/WorkView"
+        app:layout_constraintTop_toBottomOf="@+id/WorkView" />
+
+    <Button
+        android:id="@+id/Scene_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sence3"
+        app:layout_constraintBottom_toBottomOf="@+id/Scene_4"
+        app:layout_constraintEnd_toEndOf="@+id/Scene_1"
+        app:layout_constraintStart_toStartOf="@+id/Scene_1"
+        app:layout_constraintTop_toTopOf="@+id/Scene_4" />
+
+    <TextView
+        android:id="@+id/Pitch_view"
+        android:layout_width="129dp"
+        android:layout_height="21dp"
+        android:background="#FFFFFF"
+        android:text="@string/BrightneesResult"
+        app:layout_constraintBottom_toBottomOf="@+id/Pitch"
+        app:layout_constraintEnd_toEndOf="@+id/Yaw_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Yaw_view"
+        app:layout_constraintTop_toTopOf="@+id/Pitch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/Pitch"
+        android:layout_width="204dp"
+        android:layout_height="19dp"
+
+
+        android:layout_marginBottom="24dp"
+        android:background="#EFF1F3"
+        android:max="60"
+        android:progress="0"
+        android:secondaryProgress="15"
+        app:layout_constraintBottom_toTopOf="@+id/Yaw"
+        app:layout_constraintEnd_toEndOf="@+id/Yaw" />
+
+    <Switch
+        android:id="@+id/LED_Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/Switch"
+        app:layout_constraintBottom_toBottomOf="@+id/ADD_BLUETOOTH"
+        app:layout_constraintEnd_toStartOf="@+id/ADD_BLUETOOTH"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ADD_BLUETOOTH"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/WorkView"
+        android:layout_width="155dp"
+        android:layout_height="105dp"
+        android:text="@string/workview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <SeekBar
+        android:id="@+id/light"
+        android:layout_width="287dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/ADD_BLUETOOTH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LED_Switch" />
+
+    <TextView
+        android:id="@+id/light_view"
+        android:layout_width="69dp"
+        android:layout_height="19dp"
+        android:text="@string/light_view"
+        app:layout_constraintBottom_toBottomOf="@+id/light"
+        app:layout_constraintEnd_toStartOf="@+id/light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/light" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

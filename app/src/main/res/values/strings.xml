@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">"艾罗杯" 智能照明电赛控制App</string>
+    <string name="Add_bluetooth">添加蓝牙设备</string>
+    <string name="Sence1">场景一</string>
+    <string name="Scene2">场景二</string>
+    <string name="Sence3">场景三</string>
+    <string name="Sence4">场景四</string>
+    <string name="BrightneesResult">Pitch投射角度：</string>
+    <string name="Switch">开关</string>
+    <string name="workview">工作状态</string>
+    <string name="light_view">亮度</string>
+    <string name="yaw">Yaw投射角度:</string>
+
+</resources>
